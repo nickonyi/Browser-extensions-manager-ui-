@@ -37,11 +37,6 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
-.app {
-  width: 100%;
-  border: 1px solid $neutral-700;
-  min-height: 100vh;
-}
 
 .header {
   background-color: $neutral-0;
@@ -54,4 +49,16 @@ body {
   padding-block: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-theme-icon {
+  background-color: $neutral-300;
+  padding-block: 7px;
+  padding-inline: 7px;
+  border-radius: 10px;
+}
+
+.header-theme-icon:hover {
+  background-color: $neutral-200;
+  cursor: pointer;
 }
