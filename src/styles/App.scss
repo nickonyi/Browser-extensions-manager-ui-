@@ -62,3 +62,25 @@ body {
   background-color: $neutral-200;
   cursor: pointer;
 }
+
+.active-bar-container {
+  border: 1px solid $neutral-300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.active-bar-text-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.active-bar-button {
+  background-color: $neutral-300;
+  color: $neutral-900;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: none;
+}
