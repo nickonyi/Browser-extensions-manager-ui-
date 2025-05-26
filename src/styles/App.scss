@@ -64,7 +64,6 @@ body {
 }
 
 .active-bar-container {
-  border: 1px solid $neutral-300;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,12 +74,22 @@ body {
   font-size: 1.5rem;
   font-weight: 800;
 }
-
+.active-bar-buttons {
+  display: flex;
+  gap: 10px;
+}
 .active-bar-button {
-  background-color: $neutral-300;
+  background-color: $neutral-0;
   color: $neutral-900;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 25px;
   font-size: 1rem;
   border: none;
+}
+.active-bar-button:hover {
+  cursor: pointer;
+}
+.active {
+  background-color: $red-500;
+  color: $neutral-0;
 }
