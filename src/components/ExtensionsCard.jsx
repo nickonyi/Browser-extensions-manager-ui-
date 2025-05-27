@@ -17,7 +17,12 @@ function ExtensionsCard() {
           </p>
         </div>
       </div>
-      <div className="extension-card-lowerdec"></div>
+      <div className="extension-card-lowerdec">
+        <button className="extension-remove">Remove</button>
+        <div className="toggle-btn">
+          <div className="toggle-ball">toggle ball</div>
+        </div>
+      </div>
     </div>
   );
 }

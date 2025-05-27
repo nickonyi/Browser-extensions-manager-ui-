@@ -99,11 +99,28 @@ body {
 }
 
 .extension-card-container {
-  width: 300px;
+  width: 350px;
   border: 1px solid yellow;
 }
 
 .card-img-icon {
   width: 70px;
   height: 70px;
+}
+
+.extension-card-upperdec {
+  display: flex;
+  gap:10px;
+  padding:10px 20px;
+}
+.card-text {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.card-text-title {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: $neutral-900;
 }
