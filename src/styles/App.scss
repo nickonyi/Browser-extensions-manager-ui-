@@ -99,13 +99,17 @@ body {
 }
 
 .extension-card-container {
-  width: 350px;
-  border: 1px solid yellow;
+  width: 400px;
+  background-color: $neutral-0;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-icon {
   width: 70px;
   height: 70px;
+  border-radius: 15px;
 }
 
 .extension-card-upperdec {
@@ -174,4 +178,13 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(26px);
+}
+
+.extension-remove {
+  padding: 10px 20px;
+  color: $neutral-800;
+  font-weight: 300;
+  border-radius: 25px;
+  border: none;
+  border: 1px solid $neutral-700;
 }
