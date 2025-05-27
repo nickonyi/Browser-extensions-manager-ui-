@@ -20,7 +20,10 @@ function ExtensionsCard() {
       <div className="extension-card-lowerdec">
         <button className="extension-remove">Remove</button>
         <div className="toggle-btn">
-          <div className="toggle-ball">toggle ball</div>
+          <label className="switch">
+            <input type="checkbox" />
+            <span className="slider"></span>
+          </label>
         </div>
       </div>
     </div>
