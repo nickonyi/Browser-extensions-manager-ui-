@@ -5,7 +5,15 @@ import { data } from '../data';
 function ManageUI() {
   return (
     <div className="extensions-container">
-      <ExtensionsCard />
+      <ul>
+        {
+          data.map((d)=>(
+            <li key={d.name}>
+              <ExtensionsCard img={d.logo} name={d.name} description={d.description}/>
+            </li>
+          ))
+        }
+      </ul>
     </div>
   );
 }

@@ -188,3 +188,11 @@ input:checked + .slider:before {
   border: none;
   border: 1px solid $neutral-700;
 }
+
+ul {
+  display:flex ;
+  flex-wrap: wrap;
+  li {
+    list-style: none;
+  }
+}
