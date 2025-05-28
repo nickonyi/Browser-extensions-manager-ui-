@@ -1,4 +1,4 @@
-function ExtensionsCard({img,name,description}) {
+function ExtensionsCard({img,name,description,isActive='false',onToggle}) {
   return (
     <div className="extension-card-container">
       <div className="extension-card-upperdec">
@@ -20,7 +20,7 @@ function ExtensionsCard({img,name,description}) {
         <button className="extension-remove">Remove</button>
         <div className="toggle-btn">
           <label className="switch">
-            <input type="checkbox" />
+            <input type="checkbox" checked={isActive} onChange={onToggle} />
             <span className="slider"></span>
           </label>
         </div>

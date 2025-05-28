@@ -1,9 +1,9 @@
 import React from 'react';
 import ExtensionsCard from './ExtensionsCard';
-import { data } from '../data';
 
-function ManageUI({filter}) {
-  const filteredData = data.filter((d)=>{
+
+function ManageUI({filter,extensions,onToggle}) {
+  const filteredData = extensions.filter((d)=>{
     if(filter ==='active') return d.isActive;
     if (filter === 'inactive') return !d.isActive
       return true;   
@@ -14,7 +14,7 @@ function ManageUI({filter}) {
         {
           filteredData.map((d)=>(
             <li key={d.name}>
-              <ExtensionsCard img={d.logo} name={d.name} description={d.description}/>
+              <ExtensionsCard img={d.logo} name={d.name} description={d.description} isActive={d.isActive} onToggle={()=>onToggle(d.name)}/>
             </li>
           ))
         }
