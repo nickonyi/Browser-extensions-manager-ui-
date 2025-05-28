@@ -96,10 +96,11 @@ body {
 .extensions-container {
   border: 1px solid $neutral-300;
   margin-top: 30px;
+
 }
 
 .extension-card-container {
-  width: 400px;
+  width: 350px;
   background-color: $neutral-0;
   border-radius: 15px;
   margin: 20px;
@@ -187,11 +188,12 @@ input:checked + .slider:before {
   border-radius: 25px;
   border: none;
   border: 1px solid $neutral-700;
+  cursor: pointer;
 }
 
 ul {
-  display:flex ;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   li {
     list-style: none;
   }
