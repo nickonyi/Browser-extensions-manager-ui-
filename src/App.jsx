@@ -10,20 +10,21 @@ function App() {
   const [extensions,setExtensions] = useState(data);
 
   const toggleActiveStatus = (name)=> {
-    console.log(name);
-    console.log(extensions);
-    
     setExtensions((prev)=>(
       prev.map(ext=>(
         ext.name === name?{...ext,isActive:!ext.isActive}:ext
       ))
     ))
   }
+
+  const handleDelete = (name)=>{
+    setExtensions((prev)=> prev.filter(ext=>(ext.name !== name)));
+  }
   return (
     <>
       <Header />
       <ActiveBar filter={filter} setFilter={setFilter} />
-      <ManageUI filter={filter} extensions={extensions} onToggle={toggleActiveStatus} />
+      <ManageUI filter={filter} extensions={extensions} onToggle={toggleActiveStatus} onDelete={handleDelete} />
     </>
   );
 }
