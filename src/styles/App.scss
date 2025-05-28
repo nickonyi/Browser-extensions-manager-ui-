@@ -34,8 +34,8 @@ body {
 
 #root {
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1100px;
+ 
 }
 
 .header {
@@ -94,13 +94,12 @@ body {
   color: $neutral-0;
 }
 .extensions-container {
-  border: 1px solid $neutral-300;
   margin-top: 30px;
-
 }
 
 .extension-card-container {
-  width: 350px;
+  width: 320px;
+  height: 200px;
   background-color: $neutral-0;
   border-radius: 15px;
   margin: 20px;
@@ -108,8 +107,8 @@ body {
 }
 
 .card-img-icon {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 15px;
 }
 
