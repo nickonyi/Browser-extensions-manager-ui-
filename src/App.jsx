@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <ActiveBar filter={filter} setFilter={setFilter} />
-      <ManageUI />
+      <ManageUI filter={filter} />
     </>
   );
 }
