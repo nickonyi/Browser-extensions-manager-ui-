@@ -104,6 +104,9 @@ body {
   border-radius: 15px;
   margin: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-img-icon {
@@ -125,8 +128,12 @@ body {
 
 .card-text-title {
   font-weight: 800;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: $neutral-900;
+}
+.card-text-description {
+  font-size: .9rem;
+  color: $neutral-600;
 }
 
 .extension-card-lowerdec {
