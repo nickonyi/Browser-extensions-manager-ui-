@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from '../assets/images/logo.svg';
-import themeIcon from '../assets/images/icon-moon.svg';
+import IconMoon from '../assets/images/icon-moon.svg';
+import IconSun from '../assets/images/icon-sun.svg';
 
-function Header() {
+function Header({darkMode,setDarkMode}) {
   return (
     <div className="header">
       <div className="header-extensions">
@@ -10,8 +11,8 @@ function Header() {
           <img src={logo} alt="logo" />
         </div>
       </div>
-      <div className="header-theme-icon">
-        <img src={themeIcon} alt="theme icon" />
+      <div className="header-theme-icon" onClick={()=> setDarkMode(prev => !prev)}>
+        <img src={darkMode?IconSun:IconMoon} alt="theme icon" />
       </div>
     </div>
   );

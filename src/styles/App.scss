@@ -30,6 +30,11 @@ body {
   font-family: 'Noto Sans', sans-serif;
   display: flex;
   justify-content: center;
+  
+}
+body.dark {
+   background: $dark-gradient;
+   color:$neutral-0;
 }
 
 #root {

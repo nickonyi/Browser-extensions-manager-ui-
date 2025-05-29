@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import ActiveBar from './components/ActiveBar';
 import Header from './components/Header';
 import ManageUI from './components/ManageUI';
@@ -8,6 +8,15 @@ import { data } from './data';
 function App() {
   const [filter,setFilter] = useState('all');
   const [extensions,setExtensions] = useState(data);
+  const [darkMode,setDarkMode] = useState(false);
+
+  useEffect(()=>{
+    if(darkMode){
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  },[darkMode])
 
   const toggleActiveStatus = (name)=> {
     setExtensions((prev)=>(
@@ -22,8 +31,8 @@ function App() {
   }
   return (
     <>
-      <Header />
-      <ActiveBar filter={filter} setFilter={setFilter} />
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      <ActiveBar filter={filter} setFilter={setFilter}  />
       <ManageUI filter={filter} extensions={extensions} onToggle={toggleActiveStatus} onDelete={handleDelete} />
     </>
   );
