@@ -55,6 +55,14 @@ body.dark {
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+body.dark .header {
+background-color:$neutral-800;
+}
+
+
+body.dark path {
+  fill: white;
+}
 
 .header-theme-icon {
   background-color: $neutral-300;
@@ -112,6 +120,11 @@ body.dark {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+body.dark .extension-card-container{
+  background-color: $neutral-800;
+  border:1px solid rgb(255, 255, 255,.3);
 }
 
 .card-img-icon {
