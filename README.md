@@ -56,16 +56,6 @@ Working on this challenge helped me improve my understanding of managing state i
 
 Here's a sample of the toggle function I used in React:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
 ```js
 const toggleExtension = (id) => {
   setExtensions((prev) =>
