@@ -52,9 +52,9 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Working on this challenge helped me improve my understanding of managing state in React when handling toggle features and filters. I also deepened my knowledge of building responsive layouts using CSS Grid and media queries.
 
-To see how you can add code snippets, see below:
+Here's a sample of the toggle function I used in React:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
@@ -67,8 +67,10 @@ To see how you can add code snippets, see below:
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
+const toggleExtension = (id) => {
+  setExtensions((prev) =>
+    prev.map((ext) => (ext.id === id ? { ...ext, active: !ext.active } : ext))
+  );
 };
 ```
 
