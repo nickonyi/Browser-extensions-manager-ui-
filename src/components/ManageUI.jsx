@@ -1,23 +1,27 @@
 import React from 'react';
 import ExtensionsCard from './ExtensionsCard';
 
-
-function ManageUI({filter,extensions,onToggle,onDelete}) {
-  const filteredData = extensions.filter((d)=>{
-    if(filter ==='active') return d.isActive;
-    if (filter === 'inactive') return !d.isActive
-      return true;   
-  })
+function ManageUI({ filter, extensions, onToggle, onDelete }) {
+  const filteredData = extensions.filter((d) => {
+    if (filter === 'active') return d.isActive;
+    if (filter === 'inactive') return !d.isActive;
+    return true;
+  });
   return (
     <div className="extensions-container">
       <ul>
-        {
-          filteredData.map((d)=>(
-            <li key={d.name}>
-              <ExtensionsCard img={d.logo} name={d.name} description={d.description} isActive={d.isActive} onToggle={()=>onToggle(d.name)} onDelete={()=> onDelete(d.name)}/>
-            </li>
-          ))
-        }
+        {filteredData.map((d) => (
+          <li key={d.name}>
+            <ExtensionsCard
+              img={d.logo}
+              name={d.name}
+              description={d.description}
+              isActive={d.isActive}
+              onToggle={() => onToggle(d.name)}
+              onDelete={() => onDelete(d.name)}
+            />
+          </li>
+        ))}
       </ul>
     </div>
   );
