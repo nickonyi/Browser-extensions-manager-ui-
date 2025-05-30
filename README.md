@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL ](https://github.com/nickonyi/Browser-extensions-manager-ui-.git)
+- Live Site URL: [live site URL ](https://browser-extensions-manager-ui-indol.vercel.app/)
 
 ## My process
 
@@ -73,4 +73,4 @@ In future projects, I’d like to focus more on:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/nickonyi)
+- Frontend Mentor - [@nickonyi](https://www.frontendmentor.io/profile/nickonyi)
